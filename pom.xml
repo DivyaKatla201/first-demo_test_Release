@@ -43,7 +43,7 @@
 	    <configuration>
 	        <tagNameFormat>v@{project.version}</tagNameFormat> <!-- Customize tag format -->
 	        <releaseVersion>1.1</releaseVersion> <!-- Set release version manually if needed -->
-	        <developmentVersion>1.1-SNAPSHOT</developmentVersion> <!-- Set next development version -->
+	        <developmentVersion>1.2-SNAPSHOT</developmentVersion> <!-- Set next development version -->
 	        <autoVersionSubmodules>true</autoVersionSubmodules> <!-- Handle multi-module projects -->
 	        <pushChanges>true</pushChanges> <!-- Opt to not push changes automatically -->
 	        <localCheckout>true</localCheckout> <!-- Use a local checkout instead of remote -->
