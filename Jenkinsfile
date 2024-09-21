@@ -3,9 +3,6 @@ pipeline {
     options {
         disableConcurrentBuilds()
     }
-    environment {
-        WORKSPACE = '/opt/jenkins-workspace/workspace/project-demo'
-    }
     stages {
         stage('parallel execution') {
                     steps {
