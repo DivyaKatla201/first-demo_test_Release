@@ -14,6 +14,7 @@ pipeline {
                     steps {
                             sh """
                             mvn clean package
+                            test9ing
                             """
                     }
                 }
