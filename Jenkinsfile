@@ -1,20 +1,26 @@
 pipeline {
-       agent any
-    //   agent {
-     //      label 'test'
-      // }
-
-    stages {
-    //    stage('checkout') {
-      //      steps {
-       //         checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/kalyanreddyc/first-demo.git']])
-        //    }
-        //}
-        stage('Print'){
-            steps{
-        sh '''ls -ltr
-        touch test.txt'''
-            }
-        }
+    agent any
+    options {
+        disableConcurrentBuilds()
     }
+    environment {
+        WORKSPACE = '/opt/jenkins-workspace/workspace/project-demo'
+    }
+    stages {
+        stage('parallel execution') {
+                    steps {
+                            echo 'cloning repo'
+                            git 'https://github.com/kalyanreddyc/first-demo.git'
+                    }
+                }
+                stage('build') {
+                    steps {
+                            sh """
+                            mvn clean package
+                            """
+                    }
+                }
+                
+        }
+        
 }
