@@ -3,7 +3,7 @@
   <groupId>com.drilldevops</groupId>
   <artifactId>first-demo-jar</artifactId>
   <packaging>jar</packaging>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
   <name>first-demo-jar</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -42,8 +42,8 @@
 	    <version>3.0.1</version> <!-- Ensure you're using the latest or a stable version -->
 	    <configuration>
 	        <tagNameFormat>v@{project.version}</tagNameFormat> <!-- Customize tag format -->
-	        <releaseVersion>1.0</releaseVersion> <!-- Set release version manually if needed -->
-	        <developmentVersion>1.1-SNAPSHOT</developmentVersion> <!-- Set next development version -->
+	        <releaseVersion>1.1</releaseVersion> <!-- Set release version manually if needed -->
+	        <developmentVersion>1.2-SNAPSHOT</developmentVersion> <!-- Set next development version -->
 	        <autoVersionSubmodules>true</autoVersionSubmodules> <!-- Handle multi-module projects -->
 	        <pushChanges>true</pushChanges> <!-- Opt to not push changes automatically -->
 	        <localCheckout>true</localCheckout> <!-- Use a local checkout instead of remote -->
